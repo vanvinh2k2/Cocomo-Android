@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:background="#9EDF53"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        tools:ignore="MissingConstraints" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Software Size"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/txtSM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sizing Method"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/txtSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unadjusted Function Point"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/txtLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Language"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/txtNewSLOC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="New SLOC"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/txtoldSLOC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reused SLOC"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/txtIR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="% Integration Required"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/txtAA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:text="% Assessment and Assimilation\n(0% - 8%)"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Software Scale Drivers"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/txtPREC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Precedentedness"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/txtFLEX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Development Flexibility"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/txtRESL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Architecture / Risk Resolution"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/txtTEAM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Team Cohesion"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/txtPMAT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Process Maturity"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/txtRELY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Required Software Reliability"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/txtDATA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Data Base Size"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/txtCPLX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Product Complexity"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/txtRUSE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Developed for Reusability"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/txtDOCU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Documentation Match to Lifecycle Needs"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personnel"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/txtACAP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Analyst Capability"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/txtPCAP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Programmer Capability"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/txtPCON"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Personnel Continuity"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/txtAEXP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Application Experience"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/txtPEXP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Platform Experience"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/txtLTEX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Language and Toolset Experience"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Platform"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/txtTIME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Time Constraint"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/txtSTOR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Storage Constraint"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/txtPVOL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Platform Volatility"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Project"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/txtTOOL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Use of Software Tools"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/txtSITE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Multisite Development"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/txtSCED"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Required Development Schedule"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Software Labor Rates"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/txtCPM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cost per Person-Month (Dollars)"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/txtEffort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Software Size"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txtSchedual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sizing Method"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/txtCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sizing Method"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/txtSLOC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sizing Method"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/txtEAF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sizing Method"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+
+                android:layout_marginBottom="10dp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
